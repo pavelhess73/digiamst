@@ -1,0 +1,46 @@
+﻿[
+    {
+        "id":  "AMS-2027-7A-2535",
+        "createdAt":  "2026-09-23T09:54:04.6617959Z",
+        "studentName":  "Jakub Vesely",
+        "studentClass":  "7.A",
+        "parentEmail":  "vesely.jakub@email.cz",
+        "parentPhone":  "+420 777 888 999",
+        "motivation":  "Chci zazit NEMO muzeum a tvorit v Canve denik.",
+        "status":  "NovĂˇ",
+        "notes":  ""
+    },
+    {
+        "id":  "AMS-2027-8A-4219",
+        "createdAt":  "2026-09-22T14:30:00.000Z",
+        "studentName":  "Lucie Dvořáková",
+        "studentClass":  "8.A",
+        "parentEmail":  "dvorakova.jana@seznam.cz",
+        "parentPhone":  "+420 776 123 456",
+        "motivation":  "Moc ráda bych viděla Nxt Museum a zkusila tvořit multimediální obsah s generativní AI. Ráda fotím na mobilu a tvořím příspěvky v Canvě.",
+        "status":  "Přijat do týmu",
+        "notes":  "Skvělé portfolio v Canvě, spolehlivá, dobrá úroveň angličtiny."
+    },
+    {
+        "id":  "AMS-2027-7B-8912",
+        "createdAt":  "2026-09-23T08:15:00.000Z",
+        "studentName":  "Matyáš Král",
+        "studentClass":  "7.B",
+        "parentEmail":  "petr.kral@gmail.com",
+        "parentPhone":  "+420 608 987 654",
+        "motivation":  "Zajímá mě NEMO muzeum a technologie. Chci vidět, jak se učí informatika v Nizozemsku a zlepšit se v mluvení anglicky.",
+        "status":  "Pozván k rozhovoru",
+        "notes":  "Zájem o technické experimenty. Pozvánka odeslána na 14:15."
+    },
+    {
+        "id":  "AMS-2027-9A-1045",
+        "createdAt":  "2026-09-23T09:40:00.000Z",
+        "studentName":  "Sofie Černá",
+        "studentClass":  "9.A",
+        "parentEmail":  "cerna.eva@email.cz",
+        "parentPhone":  "+420 732 445 566",
+        "motivation":  "Baví mě architektura a digitální fotografie. V Amsterdamu bych chtěla vytvořit fotoreportáž o městských kanálech a lidech na kolech.",
+        "status":  "Nová",
+        "notes":  ""
+    }
+]

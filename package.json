@@ -1,0 +1,13 @@
+{
+  "name": "digiamst",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Erasmus+ Amsterdam 2027 - Web a administrace pro ZŠ MOLEKULA",
+  "type": "module",
+  "scripts": {
+    "build": "echo 'No build step required for static assets'"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.10.4"
+  }
+}

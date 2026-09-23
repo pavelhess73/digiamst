@@ -21,8 +21,15 @@ export default async function handler(req, res) {
       }
     }
 
-    const expectedPassword = process.env.ADMIN_PASSWORD || 'molekula2027';
-    const adminToken = process.env.ADMIN_TOKEN || 'admin_molekula_secret_token_2027';
+    const expectedPassword = process.env.ADMIN_PASSWORD;
+    const adminToken = process.env.ADMIN_TOKEN;
+
+    if (!expectedPassword || !adminToken) {
+      return res.status(503).json({
+        success: false,
+        error: 'Administrace není nakonfigurována. Nastavte proměnné ADMIN_PASSWORD a ADMIN_TOKEN na Vercelu.'
+      });
+    }
 
     if (body && body.password === expectedPassword) {
       return res.status(200).json({

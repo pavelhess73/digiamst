@@ -8,9 +8,9 @@ export const PIPELINE_STEPS = {
     tag: 'DETAIL FÁZE 01 // INFORMAČNÍ SETKÁNÍ',
     color: 'neon-cyan',
     title: 'Vše, co potřebuješ vědět před startem',
-    description: 'Setkání pro žáky i rodiče, kde podrobně představíme program expedice, bezpečí, partnerskou školu v Amsterdamu a jak funguje tvorba digitálního deníku. Termíny jsou nastaveny flexibilně (před vyučováním i odpoledne), aby se mohl zúčastnit opravdu každý.',
-    bullet1: 'Ranní termín: 7:30 – 7:55 (před 1. hodinou pro ranní ptáčata)',
-    bullet2: 'Odpolední termín: 14:00 – 14:45 (vhodné pro rodiče a po vyučování)',
+    description: 'Setkání pro žáky, kde podrobně představíme program expedice, bezpečí, partnerskou školu v Amsterdamu a jak funguje tvorba digitálního deníku. Termíny jsou nastaveny flexibilně (před vyučováním i odpoledne), aby se mohl zúčastnit opravdu každý.',
+    bullet1: 'Ranní termín: 7:30 – 8:00 (před 1. hodinou)',
+    bullet2: 'Odpolední termín: 14:00 – 14:30 (po vyučování)',
     tipTitle: 'TIP KOORDINÁTORA:',
     tipText: 'Nemusíš se bát zeptat na cokoliv – schůzka je nezávazná a zodpovíme všechny otázky k programu, ubytování i grantu.',
     supportNote: 'Podpora ŠPP k dispozici'
@@ -22,8 +22,8 @@ export const PIPELINE_STEPS = {
     description: 'Kreativní minivýzva je otevřená příležitost pro každého žáka 2. stupně. Nejde o známky ani o to být profesionální grafik – cení se originalita, chuť experimentovat a osobní pohled na téma.',
     bullet1: 'Formát dle vlastní volby: 3–5 fotek s popisky, plakát v Canvě, krátký medailonek nebo náčrt komiksu',
     bullet2: 'Téma: „Můj pohled na inovace nebo co bych chtěl/a v Amsterdamu objevit“',
-    tipTitle: 'PODPORA ŠPP & ICT:',
-    tipText: 'Potřebuješ pomoci s nápadem nebo aplikací Canva? V kabinetu IT i v Školním poradenském pracovišti ti rádi pomůžeme.',
+    tipTitle: 'PODPORA V TECHNICKÉ LABORATOŘI:',
+    tipText: 'Potřebuješ pomoci s nápadem nebo aplikací Canva? V hodinách technické laboratoře ti rádi pomůžeme.',
     supportNote: 'Inkluzivní přístup pro všechny žáky'
   },
   3: {

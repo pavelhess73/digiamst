@@ -8,6 +8,7 @@
     "build": "echo 'No build step required for static assets'"
   },
   "dependencies": {
-    "@neondatabase/serverless": "^0.10.4"
+    "@neondatabase/serverless": "^0.10.4",
+    "qrcode": "^1.5.4"
   }
 }

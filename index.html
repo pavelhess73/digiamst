@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="cs" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Erasmus+ Amsterdam 2027 | ZŠ MOLEKULA</title>
-  <meta name="description" content="Výzva pro 2. stupeň ZŠ Molekula: Skupinová mobilita žáků v Amsterdamu. Digitální příběhy, moderní IT, návštěva partnerské školy a vědeckých center. 100% hrazeno z grantu EU.">
+  <meta name="description"
+    content="Výzva pro 2. stupeň ZŠ Molekula: Skupinová mobilita žáků v Amsterdamu. Digitální příběhy, moderní IT, návštěva partnerské školy a vědeckých center. 100% hrazeno z grantu EU.">
 
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -47,30 +49,42 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-cyber-950 text-slate-100 cyber-grid-bg relative antialiased selection:bg-neon-magenta/30 selection:text-neon-cyan">
+
+<body
+  class="bg-cyber-950 text-slate-100 cyber-grid-bg relative antialiased selection:bg-neon-magenta/30 selection:text-neon-cyan">
 
   <!-- Background Ambient Lights / Aurora Gradients -->
   <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
     <div class="absolute -top-40 -left-40 w-96 h-96 aurora-glow-cyan rounded-full filter blur-3xl opacity-70"></div>
-    <div class="absolute top-1/4 -right-40 w-[32rem] h-[32rem] aurora-glow-purple rounded-full filter blur-3xl opacity-60"></div>
-    <div class="absolute top-2/3 left-1/3 w-[30rem] h-[30rem] aurora-glow-magenta rounded-full filter blur-3xl opacity-50"></div>
+    <div
+      class="absolute top-1/4 -right-40 w-[32rem] h-[32rem] aurora-glow-purple rounded-full filter blur-3xl opacity-60">
+    </div>
+    <div
+      class="absolute top-2/3 left-1/3 w-[30rem] h-[30rem] aurora-glow-magenta rounded-full filter blur-3xl opacity-50">
+    </div>
   </div>
 
   <!-- STICKY NAVIGATION BAR -->
-  <header class="sticky top-0 z-40 w-full backdrop-blur-xl bg-cyber-950/80 border-b border-white/10 transition-all duration-300" id="mainHeader">
+  <header
+    class="sticky top-0 z-40 w-full backdrop-blur-xl bg-cyber-950/80 border-b border-white/10 transition-all duration-300"
+    id="mainHeader">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      
+
       <!-- Brand & Project Tag -->
       <a href="#hero" class="flex items-center gap-3 group">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-neon-cyan via-neon-purple to-neon-magenta p-[1.5px] transition-transform duration-300 group-hover:scale-105 shadow-lg shadow-neon-cyan/20">
+        <div
+          class="w-10 h-10 rounded-xl bg-gradient-to-br from-neon-cyan via-neon-purple to-neon-magenta p-[1.5px] transition-transform duration-300 group-hover:scale-105 shadow-lg shadow-neon-cyan/20">
           <div class="w-full h-full bg-cyber-950 rounded-[10px] flex items-center justify-center">
-            <i data-lucide="atom" class="w-5 h-5 text-neon-cyan group-hover:rotate-45 transition-transform duration-500"></i>
+            <i data-lucide="atom"
+              class="w-5 h-5 text-neon-cyan group-hover:rotate-45 transition-transform duration-500"></i>
           </div>
         </div>
         <div>
           <div class="flex items-center gap-2">
             <span class="font-extrabold tracking-wider text-base sm:text-lg text-white">ZŠ MOLEKULA</span>
-            <span class="text-xs px-2 py-0.5 rounded-full bg-neon-purple/20 text-neon-purple border border-neon-purple/30 font-mono font-medium">JARO 2027</span>
+            <span
+              class="text-xs px-2 py-0.5 rounded-full bg-neon-purple/20 text-neon-purple border border-neon-purple/30 font-mono font-medium">JARO
+              2027</span>
           </div>
           <p class="text-[11px] text-slate-400 font-mono tracking-tight flex items-center gap-1.5">
             <span class="inline-block w-1.5 h-1.5 rounded-full bg-neon-emerald pulse-active"></span>
@@ -90,27 +104,40 @@
 
       <!-- Action Button / CTA -->
       <div class="flex items-center gap-3">
-        <a href="#prihlaska" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-mono text-xs font-semibold uppercase tracking-wider text-white bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-magenta hover:shadow-lg hover:shadow-neon-cyan/25 hover:opacity-95 transition-all duration-300">
+        <a href="#prihlaska"
+          class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-mono text-xs font-semibold uppercase tracking-wider text-white bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-magenta hover:shadow-lg hover:shadow-neon-cyan/25 hover:opacity-95 transition-all duration-300">
           <span>[ CHCI SE PŘIHLÁSIT ]</span>
           <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </a>
 
         <!-- Mobile Menu Toggle Button -->
-        <button id="mobileMenuBtn" aria-label="Otevřít menu" class="md:hidden p-2 rounded-lg bg-cyber-900 border border-white/10 text-slate-300 hover:text-white">
+        <button id="mobileMenuBtn" aria-label="Otevřít menu"
+          class="md:hidden p-2 rounded-lg bg-cyber-900 border border-white/10 text-slate-300 hover:text-white">
           <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
       </div>
     </div>
 
     <!-- Mobile Dropdown Navigation -->
-    <div id="mobileMenu" class="hidden md:hidden border-b border-white/10 bg-cyber-950/95 backdrop-blur-2xl px-6 py-5 space-y-4">
-      <a href="#piliře" class="block py-2 text-slate-200 hover:text-neon-cyan text-sm font-medium mobile-nav-link">3 Hlavní pilíře</a>
-      <a href="#lokace" class="block py-2 text-slate-200 hover:text-neon-cyan text-sm font-medium mobile-nav-link">Klíčové lokace & Inspirace</a>
-      <a href="#proces" class="block py-2 text-slate-200 hover:text-neon-cyan text-sm font-medium mobile-nav-link">Výběrový proces (Pipeline)</a>
-      <a href="#harmonogram" class="block py-2 text-slate-200 hover:text-neon-cyan text-sm font-medium mobile-nav-link">Harmonogram projektu</a>
-      <a href="#podpora" class="block py-2 text-slate-200 hover:text-neon-cyan text-sm font-medium mobile-nav-link">Bezpečí, podpora & FAQ</a>
+    <div id="mobileMenu"
+      class="hidden md:hidden border-b border-white/10 bg-cyber-950/95 backdrop-blur-2xl px-6 py-5 space-y-4">
+      <a href="#piliře" class="block py-2 text-slate-200 hover:text-neon-cyan text-sm font-medium mobile-nav-link">3
+        Hlavní pilíře</a>
+      <a href="#lokace"
+        class="block py-2 text-slate-200 hover:text-neon-cyan text-sm font-medium mobile-nav-link">Klíčové lokace &
+        Inspirace</a>
+      <a href="#proces"
+        class="block py-2 text-slate-200 hover:text-neon-cyan text-sm font-medium mobile-nav-link">Výběrový proces
+        (Pipeline)</a>
+      <a href="#harmonogram"
+        class="block py-2 text-slate-200 hover:text-neon-cyan text-sm font-medium mobile-nav-link">Harmonogram
+        projektu</a>
+      <a href="#podpora"
+        class="block py-2 text-slate-200 hover:text-neon-cyan text-sm font-medium mobile-nav-link">Bezpečí, podpora &
+        FAQ</a>
       <div class="pt-2">
-        <a href="#prihlaska" class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-mono text-xs font-bold uppercase tracking-wider text-white bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-magenta mobile-nav-link">
+        <a href="#prihlaska"
+          class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-mono text-xs font-bold uppercase tracking-wider text-white bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-magenta mobile-nav-link">
           [ Přejít k přihlášce ]
         </a>
       </div>
@@ -122,11 +149,12 @@
     <!-- 1. HERO SECTION -->
     <section id="hero" class="relative pt-12 pb-20 sm:pt-20 sm:pb-32 overflow-hidden">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="text-center max-w-4xl mx-auto">
-          
+
           <!-- Top Badges / Tech Status -->
-          <div class="inline-flex flex-wrap items-center justify-center gap-2.5 px-4 py-2 rounded-full glass-panel mb-8 border border-white/15">
+          <div
+            class="inline-flex flex-wrap items-center justify-center gap-2.5 px-4 py-2 rounded-full glass-panel mb-8 border border-white/15">
             <span class="flex items-center gap-1.5 text-xs font-mono font-semibold text-neon-cyan">
               <span class="w-2 h-2 rounded-full bg-neon-cyan pulse-active"></span>
               EU Erasmus+
@@ -148,12 +176,13 @@
 
           <!-- Highlighted Destination with Cyber Glow -->
           <div class="relative inline-block mb-6">
-            <div class="font-mono text-xs sm:text-sm text-neon-cyan bg-neon-cyan/10 border border-neon-cyan/30 px-4 py-1.5 rounded-lg mb-3 inline-flex items-center gap-2">
+            <div
+              class="font-mono text-xs sm:text-sm text-neon-cyan bg-neon-cyan/10 border border-neon-cyan/30 px-4 py-1.5 rounded-lg mb-3 inline-flex items-center gap-2">
               <i data-lucide="map-pin" class="w-4 h-4 text-neon-cyan"></i>
               DESTINATION: <span class="font-bold tracking-wider text-white">[AMSTERDAM_NL]</span>
               <span class="text-slate-400 text-[11px] hidden sm:inline">(52.3676° N, 4.9041° E)</span>
             </div>
-            
+
             <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight sm:leading-none">
               <span class="text-white">AMSTERDAM:</span><br class="hidden sm:inline">
               <span class="text-cyber-gradient">Digitální příběhy &amp; moderní IT</span>
@@ -162,26 +191,31 @@
 
           <!-- Description / Leták Quote -->
           <p class="text-lg sm:text-xl text-slate-300 leading-relaxed font-normal max-w-3xl mx-auto mb-10 text-balance">
-            „Vydej se s týmem ZŠ Molekula do srdce evropských inovací! Navštívíme partnerskou nizozemskou školu, prozkoumáme světovou vědu a digitální umění a vytvoříme jedinečný multimediální deník expedice plný vlastních objevů a nápadů.“
+            „Vydej se s týmem ZŠ Molekula do srdce evropských inovací! Navštívíme partnerskou nizozemskou školu,
+            prozkoumáme světovou vědu a digitální umění a vytvoříme jedinečný multimediální deník expedice plný
+            vlastních objevů a nápadů.“
           </p>
 
           <!-- CTA Buttons -->
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-16">
-            <a href="#prihlaska" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl text-sm font-mono font-bold tracking-wide uppercase text-white bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-magenta hover:shadow-xl hover:shadow-neon-cyan/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300">
+            <a href="#prihlaska"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl text-sm font-mono font-bold tracking-wide uppercase text-white bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-magenta hover:shadow-xl hover:shadow-neon-cyan/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300">
               <i data-lucide="sparkles" class="w-4 h-4"></i>
               <span>Chci se přihlásit</span>
               <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </a>
 
-            <a href="#lokace" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-sm font-mono font-semibold tracking-wide text-slate-200 glass-panel hover:border-neon-cyan/50 hover:text-white hover:bg-cyber-900 transition-all duration-300">
+            <a href="#lokace"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-sm font-mono font-semibold tracking-wide text-slate-200 glass-panel hover:border-neon-cyan/50 hover:text-white hover:bg-cyber-900 transition-all duration-300">
               <i data-lucide="compass" class="w-4 h-4 text-neon-cyan"></i>
               <span>Zjistit více o programu</span>
             </a>
           </div>
 
           <!-- High-Tech Quick Indicator Bar (4 Pills) -->
-          <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 max-w-5xl mx-auto pt-6 border-t border-white/10 text-left">
-            
+          <div
+            class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 max-w-5xl mx-auto pt-6 border-t border-white/10 text-left">
+
             <div class="glass-panel p-4 rounded-xl">
               <div class="flex items-center gap-2 mb-1">
                 <span class="w-2 h-2 rounded-full bg-neon-emerald"></span>
@@ -228,10 +262,11 @@
     <!-- 2. SECTION: 3 HLAVNÍ PILÍŘE -->
     <section id="piliře" class="py-20 bg-cyber-900/40 relative border-y border-white/5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <!-- Section Header -->
         <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-2 font-mono text-xs uppercase px-3 py-1 rounded-md bg-neon-cyan/10 text-neon-cyan border border-neon-cyan/20 mb-3">
+          <div
+            class="inline-flex items-center gap-2 font-mono text-xs uppercase px-3 py-1 rounded-md bg-neon-cyan/10 text-neon-cyan border border-neon-cyan/20 mb-3">
             <i data-lucide="layers" class="w-3.5 h-3.5"></i>
             <span>#SYSTEM_PILLARS</span>
           </div>
@@ -245,18 +280,20 @@
 
         <!-- 3 Cards Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
+
           <!-- Pillar 01: Partnerská IT škola -->
           <div class="glass-panel rounded-2xl p-8 relative flex flex-col justify-between group">
             <div class="absolute -top-3.5 right-6">
-              <span class="font-mono text-[11px] uppercase tracking-wider px-3 py-1 rounded-full bg-neon-cyan/15 text-neon-cyan border border-neon-cyan/40">
+              <span
+                class="font-mono text-[11px] uppercase tracking-wider px-3 py-1 rounded-full bg-neon-cyan/15 text-neon-cyan border border-neon-cyan/40">
                 [SMART SCHOOL LAB]
               </span>
             </div>
 
             <div>
               <!-- Circular Highlight Indicator -->
-              <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-neon-cyan/20 to-blue-600/10 border border-neon-cyan/30 flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300">
+              <div
+                class="w-16 h-16 rounded-2xl bg-gradient-to-br from-neon-cyan/20 to-blue-600/10 border border-neon-cyan/30 flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300">
                 <span class="font-mono text-2xl font-black text-neon-cyan">01</span>
               </div>
 
@@ -266,7 +303,8 @@
               </div>
 
               <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
-                Společná výuka v nizozemské škole, nahlédnutí do jejich IT ekosystému, týmová spolupráce a přirozená konverzace v angličtině.
+                Společná výuka v nizozemské škole, nahlédnutí do jejich IT ekosystému, týmová spolupráce a přirozená
+                konverzace v angličtině.
               </p>
             </div>
 
@@ -278,16 +316,19 @@
           </div>
 
           <!-- Pillar 02: Hrazeno z grantu EU -->
-          <div class="glass-panel rounded-2xl p-8 relative flex flex-col justify-between group border-neon-emerald/30 shadow-lg shadow-neon-emerald/5">
+          <div
+            class="glass-panel rounded-2xl p-8 relative flex flex-col justify-between group border-neon-emerald/30 shadow-lg shadow-neon-emerald/5">
             <div class="absolute -top-3.5 right-6">
-              <span class="font-mono text-[11px] uppercase tracking-wider px-3 py-1 rounded-full bg-neon-emerald/20 text-neon-emerald border border-neon-emerald/40 font-bold">
+              <span
+                class="font-mono text-[11px] uppercase tracking-wider px-3 py-1 rounded-full bg-neon-emerald/20 text-neon-emerald border border-neon-emerald/40 font-bold">
                 [0 Kč PRO RODIČE]
               </span>
             </div>
 
             <div>
               <!-- Circular Highlight Indicator with 100% Badge -->
-              <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-neon-emerald/25 to-teal-800/20 border border-neon-emerald/40 flex flex-col items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300">
+              <div
+                class="w-16 h-16 rounded-2xl bg-gradient-to-br from-neon-emerald/25 to-teal-800/20 border border-neon-emerald/40 flex flex-col items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300">
                 <span class="font-mono text-xs font-extrabold text-neon-emerald">100%</span>
                 <span class="font-mono text-[9px] uppercase tracking-tighter text-slate-300">GRANT EU</span>
               </div>
@@ -298,12 +339,15 @@
               </div>
 
               <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
-                Cesta, moderní ubytování, celodenní stravování, vstupy do institucí a cestovní pojištění jsou pro rodiny žáků kompletně zdarma.
+                Cesta, moderní ubytování, celodenní stravování, vstupy do institucí a cestovní pojištění jsou pro rodiny
+                žáků kompletně zdarma.
               </p>
             </div>
 
             <div class="mt-8 pt-6 border-t border-white/10 flex flex-wrap gap-2">
-              <span class="text-xs font-mono text-neon-emerald bg-neon-emerald/10 px-2.5 py-1 rounded-md font-semibold">100% HRAZENO</span>
+              <span
+                class="text-xs font-mono text-neon-emerald bg-neon-emerald/10 px-2.5 py-1 rounded-md font-semibold">100%
+                HRAZENO</span>
               <span class="text-xs font-mono text-slate-400 bg-white/5 px-2.5 py-1 rounded-md">#AllInclusive</span>
               <span class="text-xs font-mono text-slate-400 bg-white/5 px-2.5 py-1 rounded-md">#ErasmusPlus</span>
             </div>
@@ -312,14 +356,16 @@
           <!-- Pillar 03: Digitální storytelling -->
           <div class="glass-panel rounded-2xl p-8 relative flex flex-col justify-between group">
             <div class="absolute -top-3.5 right-6">
-              <span class="font-mono text-[11px] uppercase tracking-wider px-3 py-1 rounded-full bg-neon-magenta/20 text-neon-magenta border border-neon-magenta/40">
+              <span
+                class="font-mono text-[11px] uppercase tracking-wider px-3 py-1 rounded-full bg-neon-magenta/20 text-neon-magenta border border-neon-magenta/40">
                 [CREATIVE DIGITAL LAB]
               </span>
             </div>
 
             <div>
               <!-- Circular Highlight Indicator -->
-              <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-neon-magenta/20 to-purple-800/10 border border-neon-magenta/30 flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300">
+              <div
+                class="w-16 h-16 rounded-2xl bg-gradient-to-br from-neon-magenta/20 to-purple-800/10 border border-neon-magenta/30 flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300">
                 <span class="font-mono text-2xl font-black text-neon-magenta">03</span>
               </div>
 
@@ -329,7 +375,8 @@
               </div>
 
               <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
-                Tvorba interaktivního expedičního deníku, fotopříběhů a digitálních koláží s využitím kreativních aplikací dle vlastní volby.
+                Tvorba interaktivního expedičního deníku, fotopříběhů a digitálních koláží s využitím kreativních
+                aplikací dle vlastní volby.
               </p>
             </div>
 
@@ -348,10 +395,11 @@
     <!-- 3. SECTION: KLÍČOVÉ LOKACE & INSPIRACE -->
     <section id="lokace" class="py-20 sm:py-28 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-14">
           <div>
-            <div class="inline-flex items-center gap-2 font-mono text-xs uppercase px-3 py-1 rounded-md bg-neon-magenta/10 text-neon-magenta border border-neon-magenta/20 mb-3">
+            <div
+              class="inline-flex items-center gap-2 font-mono text-xs uppercase px-3 py-1 rounded-md bg-neon-magenta/10 text-neon-magenta border border-neon-magenta/20 mb-3">
               <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
               <span>#CREATIVE_EXPEDITION</span>
             </div>
@@ -359,154 +407,30 @@
               Klíčové lokace &amp; Inspirace
             </h2>
             <p class="text-slate-400 mt-3 text-base sm:text-lg max-w-2xl">
-              Čtyři unikátní amsterdamská prostředí, kde budeme sbírat materiál pro expediční multimediální deník. Klikni na kartu pro podrobnosti o úkolech a technologiích!
+              Čtyři unikátní amsterdamská prostředí, kde budeme sbírat materiál pro expediční multimediální deník.
+              Klikni na kartu pro podrobnosti o úkolech a technologiích!
             </p>
           </div>
 
           <!-- Location Category Filter Buttons -->
           <div class="mt-6 md:mt-0 flex flex-wrap gap-2 font-mono text-xs" id="locationFilterGroup">
-            <button class="px-3.5 py-1.5 rounded-lg border border-neon-cyan/40 bg-neon-cyan/15 text-neon-cyan transition-all filter-btn active" data-filter="all">Všechny (4)</button>
-            <button class="px-3.5 py-1.5 rounded-lg border border-white/10 bg-white/5 text-slate-300 hover:text-white transition-all filter-btn" data-filter="art">Digitální umění</button>
-            <button class="px-3.5 py-1.5 rounded-lg border border-white/10 bg-white/5 text-slate-300 hover:text-white transition-all filter-btn" data-filter="science">Věda &amp; IT</button>
-            <button class="px-3.5 py-1.5 rounded-lg border border-white/10 bg-white/5 text-slate-300 hover:text-white transition-all filter-btn" data-filter="culture">Kultura</button>
+            <button
+              class="px-3.5 py-1.5 rounded-lg border border-neon-cyan/40 bg-neon-cyan/15 text-neon-cyan transition-all filter-btn active"
+              data-filter="all">Všechny (4)</button>
+            <button
+              class="px-3.5 py-1.5 rounded-lg border border-white/10 bg-white/5 text-slate-300 hover:text-white transition-all filter-btn"
+              data-filter="art">Digitální umění</button>
+            <button
+              class="px-3.5 py-1.5 rounded-lg border border-white/10 bg-white/5 text-slate-300 hover:text-white transition-all filter-btn"
+              data-filter="science">Věda &amp; IT</button>
+            <button
+              class="px-3.5 py-1.5 rounded-lg border border-white/10 bg-white/5 text-slate-300 hover:text-white transition-all filter-btn"
+              data-filter="culture">Kultura</button>
           </div>
         </div>
 
-        <!-- 4 Locations Grid -->
+        <!-- 4 Locations Grid (Populated dynamically via js/modules/locations.js) -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="locationsGrid">
-          
-          <!-- Card 1: The Upside Down -->
-          <div class="location-card glass-panel rounded-2xl overflow-hidden flex flex-col justify-between cursor-pointer group" data-category="art" data-loc-id="upsidedown">
-            <div class="p-6">
-              <div class="flex items-center justify-between mb-4">
-                <span class="font-mono text-xs uppercase px-2.5 py-1 rounded bg-neon-pink/15 text-neon-pink border border-neon-pink/30 font-semibold">
-                  CREATIVITY
-                </span>
-                <span class="text-slate-500 font-mono text-xs">#LOC_01</span>
-              </div>
-
-              <!-- Graphic / Icon Box -->
-              <div class="h-36 rounded-xl bg-gradient-to-br from-pink-900/40 via-purple-900/20 to-cyber-900 border border-white/10 flex items-center justify-center mb-6 relative overflow-hidden group-hover:border-neon-pink/40 transition-colors">
-                <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(236,72,153,0.15),transparent_70%)]"></div>
-                <div class="text-center z-10 transition-transform duration-300 group-hover:scale-110">
-                  <i data-lucide="flip-vertical" class="w-12 h-12 text-neon-pink mx-auto mb-2"></i>
-                  <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">Optical Illusions</span>
-                </div>
-              </div>
-
-              <h3 class="text-xl font-bold text-white group-hover:text-neon-pink transition-colors mb-2">
-                The Upside Down
-              </h3>
-              <p class="text-slate-300 text-sm leading-relaxed">
-                Hra s perspektivou, optické iluze &amp; kreativní foto a grafické nápady pro tvůj expediční profil.
-              </p>
-            </div>
-
-            <div class="px-6 pb-6 pt-3 border-t border-white/5 flex items-center justify-between text-xs font-mono text-neon-pink">
-              <span>Prozkoumat úkoly</span>
-              <i data-lucide="external-link" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
-            </div>
-          </div>
-
-          <!-- Card 2: Nxt Museum -->
-          <div class="location-card glass-panel rounded-2xl overflow-hidden flex flex-col justify-between cursor-pointer group" data-category="art" data-loc-id="nxtmuseum">
-            <div class="p-6">
-              <div class="flex items-center justify-between mb-4">
-                <span class="font-mono text-xs uppercase px-2.5 py-1 rounded bg-neon-purple/20 text-neon-purple border border-neon-purple/30 font-semibold">
-                  NEW MEDIA
-                </span>
-                <span class="text-slate-500 font-mono text-xs">#LOC_02</span>
-              </div>
-
-              <!-- Graphic / Icon Box -->
-              <div class="h-36 rounded-xl bg-gradient-to-br from-purple-950 via-cyber-900 to-indigo-950/40 border border-white/10 flex items-center justify-center mb-6 relative overflow-hidden group-hover:border-neon-purple/40 transition-colors">
-                <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(139,92,246,0.2),transparent_70%)]"></div>
-                <div class="text-center z-10 transition-transform duration-300 group-hover:scale-110">
-                  <i data-lucide="bot" class="w-12 h-12 text-neon-purple mx-auto mb-2"></i>
-                  <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">Generative AI Art</span>
-                </div>
-              </div>
-
-              <h3 class="text-xl font-bold text-white group-hover:text-neon-purple transition-colors mb-2">
-                Nxt Museum
-              </h3>
-              <p class="text-slate-300 text-sm leading-relaxed">
-                Fascinující propojení digitálního umění, světla, prostorové hudby a generativní umělé inteligence.
-              </p>
-            </div>
-
-            <div class="px-6 pb-6 pt-3 border-t border-white/5 flex items-center justify-between text-xs font-mono text-neon-purple">
-              <span>Prozkoumat úkoly</span>
-              <i data-lucide="external-link" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
-            </div>
-          </div>
-
-          <!-- Card 3: NEMO Science Museum -->
-          <div class="location-card glass-panel rounded-2xl overflow-hidden flex flex-col justify-between cursor-pointer group" data-category="science" data-loc-id="nemo">
-            <div class="p-6">
-              <div class="flex items-center justify-between mb-4">
-                <span class="font-mono text-xs uppercase px-2.5 py-1 rounded bg-neon-cyan/20 text-neon-cyan border border-neon-cyan/30 font-semibold">
-                  SCIENCE &amp; TECH
-                </span>
-                <span class="text-slate-500 font-mono text-xs">#LOC_03</span>
-              </div>
-
-              <!-- Graphic / Icon Box -->
-              <div class="h-36 rounded-xl bg-gradient-to-br from-cyan-950 via-cyber-900 to-teal-950/40 border border-white/10 flex items-center justify-center mb-6 relative overflow-hidden group-hover:border-neon-cyan/40 transition-colors">
-                <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,242,254,0.18),transparent_70%)]"></div>
-                <div class="text-center z-10 transition-transform duration-300 group-hover:scale-110">
-                  <i data-lucide="flask-conical" class="w-12 h-12 text-neon-cyan mx-auto mb-2"></i>
-                  <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">Interactive Science</span>
-                </div>
-              </div>
-
-              <h3 class="text-xl font-bold text-white group-hover:text-neon-cyan transition-colors mb-2">
-                NEMO Science Museum
-              </h3>
-              <p class="text-slate-300 text-sm leading-relaxed">
-                Interaktivní věda a technologie – jak fungují moderní objevy, udržitelná energie a fyzikální zákonitosti kolem nás.
-              </p>
-            </div>
-
-            <div class="px-6 pb-6 pt-3 border-t border-white/5 flex items-center justify-between text-xs font-mono text-neon-cyan">
-              <span>Prozkoumat úkoly</span>
-              <i data-lucide="external-link" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
-            </div>
-          </div>
-
-          <!-- Card 4: Tradice & Město -->
-          <div class="location-card glass-panel rounded-2xl overflow-hidden flex flex-col justify-between cursor-pointer group" data-category="culture" data-loc-id="tradice">
-            <div class="p-6">
-              <div class="flex items-center justify-between mb-4">
-                <span class="font-mono text-xs uppercase px-2.5 py-1 rounded bg-neon-amber/20 text-neon-amber border border-neon-amber/30 font-semibold">
-                  CULTURE
-                </span>
-                <span class="text-slate-500 font-mono text-xs">#LOC_04</span>
-              </div>
-
-              <!-- Graphic / Icon Box -->
-              <div class="h-36 rounded-xl bg-gradient-to-br from-amber-950/40 via-cyber-900 to-orange-950/30 border border-white/10 flex items-center justify-center mb-6 relative overflow-hidden group-hover:border-neon-amber/40 transition-colors">
-                <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(245,158,11,0.18),transparent_70%)]"></div>
-                <div class="text-center z-10 transition-transform duration-300 group-hover:scale-110">
-                  <i data-lucide="landmark" class="w-12 h-12 text-neon-amber mx-auto mb-2"></i>
-                  <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">Heritage &amp; Canals</span>
-                </div>
-              </div>
-
-              <h3 class="text-xl font-bold text-white group-hover:text-neon-amber transition-colors mb-2">
-                Tradice &amp; Město
-              </h3>
-              <p class="text-slate-300 text-sm leading-relaxed">
-                Historické amsterdamské kanály (Grachten), holandské architektonické dědictví a ochutnávka tradičních sýrů.
-              </p>
-            </div>
-
-            <div class="px-6 pb-6 pt-3 border-t border-white/5 flex items-center justify-between text-xs font-mono text-neon-amber">
-              <span>Prozkoumat úkoly</span>
-              <i data-lucide="external-link" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
-            </div>
-          </div>
-
         </div>
 
       </div>
@@ -515,12 +439,13 @@
     <!-- 4. SECTION: VÝBĚROVÝ PROCES (Interactive Terminal Pipeline) -->
     <section id="proces" class="py-20 bg-cyber-900/50 border-t border-white/5 relative">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <!-- Terminal Container Window -->
         <div class="rounded-2xl glass-panel border border-white/15 overflow-hidden shadow-2xl">
-          
+
           <!-- Terminal Header Bar -->
-          <div class="bg-cyber-950/90 px-6 py-4 border-b border-white/10 flex flex-wrap items-center justify-between gap-4">
+          <div
+            class="bg-cyber-950/90 px-6 py-4 border-b border-white/10 flex flex-wrap items-center justify-between gap-4">
             <div class="flex items-center gap-2">
               <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
               <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
@@ -536,24 +461,29 @@
 
           <!-- Terminal Body -->
           <div class="p-6 sm:p-10">
-            
+
             <div class="mb-8">
               <div class="font-mono text-sm sm:text-base text-neon-cyan mb-2">
-                <span class="text-neon-magenta">&gt;</span> ./VYBEROVY_PROCES.sh --target="AMSTERDAM_2027" --support="ŠPP"
+                <span class="text-neon-magenta">&gt;</span> ./VYBEROVY_PROCES.sh --target="AMSTERDAM_2027"
+                --support="ŠPP"
                 <span class="terminal-cursor"></span>
               </div>
               <p class="text-slate-300 text-sm sm:text-base">
-                Výběrové řízení je otevřené pro všechny zájemce 2. stupně ZŠ Molekula (6.–9. třída). Hledáme nadšení, týmového ducha a chuť tvořit!
+                Výběrové řízení je otevřené pro všechny zájemce 2. stupně ZŠ Molekula (6.–9. třída). Hledáme nadšení,
+                týmového ducha a chuť tvořit!
               </p>
             </div>
 
             <!-- Pipeline Step Selector (Tabs) -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-              
+
               <!-- Step 1 Button -->
-              <button class="pipeline-tab p-5 rounded-xl border border-neon-cyan/40 bg-neon-cyan/10 text-left transition-all group" data-step="1">
+              <button
+                class="pipeline-tab p-5 rounded-xl border border-neon-cyan/40 bg-neon-cyan/10 text-left transition-all group"
+                data-step="1">
                 <div class="flex items-center justify-between mb-2">
-                  <span class="font-mono text-xs uppercase px-2 py-0.5 rounded bg-neon-cyan/20 text-neon-cyan font-bold">
+                  <span
+                    class="font-mono text-xs uppercase px-2 py-0.5 rounded bg-neon-cyan/20 text-neon-cyan font-bold">
                     Krok 01
                   </span>
                   <i data-lucide="users" class="w-4 h-4 text-neon-cyan"></i>
@@ -563,9 +493,12 @@
               </button>
 
               <!-- Step 2 Button -->
-              <button class="pipeline-tab p-5 rounded-xl border border-white/10 bg-white/5 text-left transition-all group hover:border-neon-purple/40" data-step="2">
+              <button
+                class="pipeline-tab p-5 rounded-xl border border-white/10 bg-white/5 text-left transition-all group hover:border-neon-purple/40"
+                data-step="2">
                 <div class="flex items-center justify-between mb-2">
-                  <span class="font-mono text-xs uppercase px-2 py-0.5 rounded bg-neon-purple/20 text-neon-purple font-bold">
+                  <span
+                    class="font-mono text-xs uppercase px-2 py-0.5 rounded bg-neon-purple/20 text-neon-purple font-bold">
                     Krok 02
                   </span>
                   <i data-lucide="palette" class="w-4 h-4 text-neon-purple"></i>
@@ -575,9 +508,12 @@
               </button>
 
               <!-- Step 3 Button -->
-              <button class="pipeline-tab p-5 rounded-xl border border-white/10 bg-white/5 text-left transition-all group hover:border-neon-magenta/40" data-step="3">
+              <button
+                class="pipeline-tab p-5 rounded-xl border border-white/10 bg-white/5 text-left transition-all group hover:border-neon-magenta/40"
+                data-step="3">
                 <div class="flex items-center justify-between mb-2">
-                  <span class="font-mono text-xs uppercase px-2 py-0.5 rounded bg-neon-magenta/20 text-neon-magenta font-bold">
+                  <span
+                    class="font-mono text-xs uppercase px-2 py-0.5 rounded bg-neon-magenta/20 text-neon-magenta font-bold">
                     Krok 03
                   </span>
                   <i data-lucide="message-square" class="w-4 h-4 text-neon-magenta"></i>
@@ -590,7 +526,7 @@
 
             <!-- Dynamic Detail Container for Selected Step -->
             <div id="pipelineStepDetail" class="rounded-xl bg-cyber-950/80 border border-white/10 p-6 sm:p-8">
-              
+
               <!-- Content will be injected dynamically or default to Step 1 -->
               <div class="flex flex-col md:flex-row gap-6 items-start justify-between">
                 <div class="space-y-4 max-w-2xl">
@@ -600,13 +536,15 @@
                   </div>
                   <h3 class="text-2xl font-bold text-white">Vše, co potřebuješ vědět před startem</h3>
                   <p class="text-slate-300 text-sm leading-relaxed">
-                    Setkání pro žáky i rodiče, kde podrobně představíme program expedice, bezpečí, partnerskou školu v Amsterdamu a jak funguje tvorba digitálního deníku. Termíny jsou nastaveny flexibilně (před vyučováním i odpoledne), aby se mohl zúčastnit opravdu každý.
+                    Setkání pro žáky, kde podrobně představíme program expedice, bezpečí, partnerskou školu v Amsterdamu
+                    a jak funguje tvorba digitálního deníku. Termíny jsou nastaveny flexibilně (před vyučováním i
+                    odpoledne), aby se mohl zúčastnit opravdu každý.
                   </p>
-                  
+
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                     <div class="flex items-start gap-2.5 text-xs text-slate-300">
                       <i data-lucide="check-circle-2" class="w-4 h-4 text-neon-cyan shrink-0 mt-0.5"></i>
-                      <span>Ranní termín: 7:30 – 7:55 (před 1. hodinou)</span>
+                      <span>Ranní termín: 7:30 – 8:00 (před 1. hodinou)</span>
                     </div>
                     <div class="flex items-start gap-2.5 text-xs text-slate-300">
                       <i data-lucide="check-circle-2" class="w-4 h-4 text-neon-cyan shrink-0 mt-0.5"></i>
@@ -615,14 +553,16 @@
                   </div>
                 </div>
 
-                <div class="bg-cyber-900 border border-white/10 rounded-xl p-4 w-full md:w-64 font-mono text-xs space-y-2 shrink-0">
+                <div
+                  class="bg-cyber-900 border border-white/10 rounded-xl p-4 w-full md:w-64 font-mono text-xs space-y-2 shrink-0">
                   <div class="text-slate-400">TIP KOORDINÁTORA:</div>
                   <p class="text-slate-200">
-                    Nemusíš se bát zeptat na cokoliv – schůzka je nezávazná a zodpovíme všechny otázky k programu i grantu.
+                    Nemusíš se bát zeptat na cokoliv – schůzka je nezávazná a zodpovíme všechny otázky k programu i
+                    grantu.
                   </p>
                   <div class="pt-2 text-neon-cyan flex items-center gap-1 font-semibold">
                     <i data-lucide="help-circle" class="w-3.5 h-3.5"></i>
-                    <span>Podpora ŠPP k dispozici</span>
+                    <span>Podpora vedení školy k dispozici</span>
                   </div>
                 </div>
               </div>
@@ -639,9 +579,10 @@
     <!-- 5. SECTION: ČASOVÁ OSA PROJEKTU (ETAPA 01) -->
     <section id="harmonogram" class="py-20 relative">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="text-center max-w-2xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-2 font-mono text-xs uppercase px-3 py-1 rounded-md bg-neon-purple/10 text-neon-purple border border-neon-purple/20 mb-3">
+          <div
+            class="inline-flex items-center gap-2 font-mono text-xs uppercase px-3 py-1 rounded-md bg-neon-purple/10 text-neon-purple border border-neon-purple/20 mb-3">
             <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
             <span>#ROADMAP_ETAPA_01</span>
           </div>
@@ -655,15 +596,18 @@
 
         <!-- Visual Timeline Cards -->
         <div class="relative">
-          
+
           <!-- Vertical / Horizontal Connecting Line -->
-          <div class="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-magenta -translate-y-1/2 opacity-30 z-0"></div>
+          <div
+            class="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-magenta -translate-y-1/2 opacity-30 z-0">
+          </div>
 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
-            
+
             <!-- Step A -->
             <div class="glass-panel p-6 rounded-2xl relative border-t-2 border-t-neon-cyan">
-              <div class="w-12 h-12 rounded-xl bg-neon-cyan/20 border border-neon-cyan/40 text-neon-cyan font-mono font-bold text-lg flex items-center justify-center mb-4">
+              <div
+                class="w-12 h-12 rounded-xl bg-neon-cyan/20 border border-neon-cyan/40 text-neon-cyan font-mono font-bold text-lg flex items-center justify-center mb-4">
                 A
               </div>
               <span class="font-mono text-xs uppercase text-neon-cyan font-bold tracking-wider">Milník 01</span>
@@ -679,7 +623,8 @@
 
             <!-- Step B -->
             <div class="glass-panel p-6 rounded-2xl relative border-t-2 border-t-neon-purple">
-              <div class="w-12 h-12 rounded-xl bg-neon-purple/20 border border-neon-purple/40 text-neon-purple font-mono font-bold text-lg flex items-center justify-center mb-4">
+              <div
+                class="w-12 h-12 rounded-xl bg-neon-purple/20 border border-neon-purple/40 text-neon-purple font-mono font-bold text-lg flex items-center justify-center mb-4">
                 B
               </div>
               <span class="font-mono text-xs uppercase text-neon-purple font-bold tracking-wider">Milník 02</span>
@@ -695,7 +640,8 @@
 
             <!-- Step C -->
             <div class="glass-panel p-6 rounded-2xl relative border-t-2 border-t-neon-magenta">
-              <div class="w-12 h-12 rounded-xl bg-neon-magenta/20 border border-neon-magenta/40 text-neon-magenta font-mono font-bold text-lg flex items-center justify-center mb-4">
+              <div
+                class="w-12 h-12 rounded-xl bg-neon-magenta/20 border border-neon-magenta/40 text-neon-magenta font-mono font-bold text-lg flex items-center justify-center mb-4">
                 C
               </div>
               <span class="font-mono text-xs uppercase text-neon-magenta font-bold tracking-wider">Milník 03</span>
@@ -719,33 +665,36 @@
     <!-- 6. SECTION: BEZPEČÍ, PODPORA & FAQ -->
     <section id="podpora" class="py-20 bg-cyber-900/40 border-y border-white/5 relative">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
+
           <!-- Left Column: Support & Safe Guarding -->
           <div class="lg:col-span-5 space-y-6">
-            <div class="inline-flex items-center gap-2 font-mono text-xs uppercase px-3 py-1 rounded-md bg-neon-emerald/10 text-neon-emerald border border-neon-emerald/20">
+            <div
+              class="inline-flex items-center gap-2 font-mono text-xs uppercase px-3 py-1 rounded-md bg-neon-emerald/10 text-neon-emerald border border-neon-emerald/20">
               <i data-lucide="shield" class="w-3.5 h-3.5"></i>
               <span>#SAFETY_FIRST</span>
             </div>
-            
+
             <h2 class="text-3xl font-extrabold text-white tracking-tight">
               Bezpečí, inkluze &amp; podpora žáků
             </h2>
 
             <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-              ZŠ Molekula garantuje profesionální zázemí. Každý žák má plnou podporu nejen během cesty, ale i v průběhu celého přihlašovacího a přípravného procesu.
+              ZŠ Molekula garantuje profesionální zázemí. Každý žák má plnou podporu nejen během cesty, ale i v průběhu
+              celého přihlašovacího a přípravného procesu.
             </p>
 
             <div class="space-y-4 pt-2">
-              
+
               <div class="glass-panel p-4 rounded-xl flex items-start gap-4">
                 <div class="p-2.5 rounded-lg bg-neon-cyan/15 text-neon-cyan shrink-0">
                   <i data-lucide="user-check" class="w-5 h-5"></i>
                 </div>
                 <div>
                   <h4 class="text-white font-bold text-sm">Pedagogický a odborný doprovod</h4>
-                  <p class="text-xs text-slate-300 mt-1">Zkušení pedagogové školy, nepřetržitý dohled, zdravotnická a organizační péče po celou dobu cesty.</p>
+                  <p class="text-xs text-slate-300 mt-1">Zkušení pedagogové školy, nepřetržitý dohled, zdravotnická a
+                    organizační péče po celou dobu cesty.</p>
                 </div>
               </div>
 
@@ -755,7 +704,8 @@
                 </div>
                 <div>
                   <h4 class="text-white font-bold text-sm">Podpora ŠPP (Školní poradenské pracoviště)</h4>
-                  <p class="text-xs text-slate-300 mt-1">Podpora pro každého zájemce s tvorbou minivýzvy a adaptací. Erasmus+ je otevřen všem žákům bez rozdílu.</p>
+                  <p class="text-xs text-slate-300 mt-1">Podpora pro každého zájemce s tvorbou minivýzvy a adaptací.
+                    Erasmus+ je otevřen všem žákům bez rozdílu.</p>
                 </div>
               </div>
 
@@ -765,7 +715,8 @@
                 </div>
                 <div>
                   <h4 class="text-white font-bold text-sm">Koordinátor projektu Erasmus+</h4>
-                  <p class="text-xs text-slate-300 mt-1">Kabinet IT &amp; vedení školy ZŠ Molekula. Přímé konzultace pro rodiče kdykoliv.</p>
+                  <p class="text-xs text-slate-300 mt-1">Kabinet IT &amp; vedení školy ZŠ Molekula. Přímé konzultace pro
+                    rodiče kdykoliv.</p>
                 </div>
               </div>
 
@@ -780,55 +731,71 @@
             </h3>
 
             <div class="space-y-3" id="faqAccordion">
-              
+
               <!-- FAQ Item 1 -->
               <div class="glass-panel rounded-xl overflow-hidden border border-white/10 faq-item">
-                <button class="w-full px-5 py-4 text-left font-semibold text-white flex items-center justify-between gap-4 faq-trigger">
+                <button
+                  class="w-full px-5 py-4 text-left font-semibold text-white flex items-center justify-between gap-4 faq-trigger">
                   <span class="text-sm sm:text-base">Kolik expedice stojí pro rodiče?</span>
-                  <i data-lucide="chevron-down" class="w-4 h-4 text-neon-cyan transition-transform duration-300 shrink-0"></i>
+                  <i data-lucide="chevron-down"
+                    class="w-4 h-4 text-neon-cyan transition-transform duration-300 shrink-0"></i>
                 </button>
                 <div class="px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed faq-content hidden">
                   <p>
-                    <strong>Přesně 0 Kč.</strong> Celá mobilita je v plné výši financována z grantu Evropské unie v rámci programu Erasmus+. Hrazena je letenka/doprava, ubytování v ověřeném moderním zařízení, plná penze (stravování), veškeré vstupy do muzeí a partnerské školy, cestovní pojištění i kapesné na programové aktivity.
+                    <strong>Přesně 0 Kč.</strong> Celá mobilita je v plné výši financována z grantu Evropské unie v
+                    rámci programu Erasmus+. Hrazena je letenka/doprava, ubytování v ověřeném moderním zařízení, plná
+                    penze (stravování), veškeré vstupy do muzeí a partnerské školy, cestovní pojištění i kapesné na
+                    programové aktivity.
                   </p>
                 </div>
               </div>
 
               <!-- FAQ Item 2 -->
               <div class="glass-panel rounded-xl overflow-hidden border border-white/10 faq-item">
-                <button class="w-full px-5 py-4 text-left font-semibold text-white flex items-center justify-between gap-4 faq-trigger">
+                <button
+                  class="w-full px-5 py-4 text-left font-semibold text-white flex items-center justify-between gap-4 faq-trigger">
                   <span class="text-sm sm:text-base">Kdo se může přihlásit?</span>
-                  <i data-lucide="chevron-down" class="w-4 h-4 text-neon-cyan transition-transform duration-300 shrink-0"></i>
+                  <i data-lucide="chevron-down"
+                    class="w-4 h-4 text-neon-cyan transition-transform duration-300 shrink-0"></i>
                 </button>
                 <div class="px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed faq-content hidden">
                   <p>
-                    Výzva je určena pro žáky <strong>2. stupně ZŠ Molekula (6.–9. ročník)</strong>. Nevyžadujeme samé jedničky – klíčová je chuť učit se novým věcem, spolehlivost a zájem o digitální technologie nebo storytelling.
+                    Výzva je určena pro žáky <strong>2. stupně ZŠ Molekula (6.–9. ročník)</strong>. Nevyžadujeme samé
+                    jedničky – klíčová je chuť učit se novým věcem, spolehlivost a zájem o digitální technologie nebo
+                    storytelling.
                   </p>
                 </div>
               </div>
 
               <!-- FAQ Item 3 -->
               <div class="glass-panel rounded-xl overflow-hidden border border-white/10 faq-item">
-                <button class="w-full px-5 py-4 text-left font-semibold text-white flex items-center justify-between gap-4 faq-trigger">
+                <button
+                  class="w-full px-5 py-4 text-left font-semibold text-white flex items-center justify-between gap-4 faq-trigger">
                   <span class="text-sm sm:text-base">Co když si žák nevěří v angličtině?</span>
-                  <i data-lucide="chevron-down" class="w-4 h-4 text-neon-cyan transition-transform duration-300 shrink-0"></i>
+                  <i data-lucide="chevron-down"
+                    class="w-4 h-4 text-neon-cyan transition-transform duration-300 shrink-0"></i>
                 </button>
                 <div class="px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed faq-content hidden">
                   <p>
-                    Vůbec to nevadí! Jedním z hlavních cílů programu Erasmus+ je právě odbourání jazykové bariéry a získání odvahy mluvit. Týmy pracují společně a s pedagogy školy mají žáci neustálou oporu.
+                    Vůbec to nevadí! Jedním z hlavních cílů programu Erasmus+ je právě odbourání jazykové bariéry a
+                    získání odvahy mluvit. Týmy pracují společně a s pedagogy školy mají žáci neustálou oporu.
                   </p>
                 </div>
               </div>
 
               <!-- FAQ Item 4 -->
               <div class="glass-panel rounded-xl overflow-hidden border border-white/10 faq-item">
-                <button class="w-full px-5 py-4 text-left font-semibold text-white flex items-center justify-between gap-4 faq-trigger">
+                <button
+                  class="w-full px-5 py-4 text-left font-semibold text-white flex items-center justify-between gap-4 faq-trigger">
                   <span class="text-sm sm:text-base">Jak probíhá odevzdání kreativní minivýzvy?</span>
-                  <i data-lucide="chevron-down" class="w-4 h-4 text-neon-cyan transition-transform duration-300 shrink-0"></i>
+                  <i data-lucide="chevron-down"
+                    class="w-4 h-4 text-neon-cyan transition-transform duration-300 shrink-0"></i>
                 </button>
                 <div class="px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed faq-content hidden">
                   <p>
-                    Formát je zcela volný – může to být fotopříběh z víkendu, krátká prezentace v Canvě, video medailonek nebo nápad, jak by žák zachytil Amsterdam. Žákům, kteří potřebují pomoci s technikou nebo nápadem, ochotně poradí ŠPP a vyučující informatiky.
+                    Formát je zcela volný – může to být fotopříběh z víkendu, krátká prezentace v Canvě, video
+                    medailonek nebo nápad, jak by žák zachytil Amsterdam. Žákům, kteří potřebují pomoci s technikou nebo
+                    nápadem, ochotně poradí ŠPP a vyučující informatiky.
                   </p>
                 </div>
               </div>
@@ -844,9 +811,10 @@
     <!-- 7. SECTION: PŘIHLÁŠKA, KONTAKTY & QR KÓD -->
     <section id="prihlaska" class="py-20 sm:py-28 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-2 font-mono text-xs uppercase px-3 py-1 rounded-md bg-neon-cyan/10 text-neon-cyan border border-neon-cyan/20 mb-3">
+          <div
+            class="inline-flex items-center gap-2 font-mono text-xs uppercase px-3 py-1 rounded-md bg-neon-cyan/10 text-neon-cyan border border-neon-cyan/20 mb-3">
             <i data-lucide="send" class="w-3.5 h-3.5"></i>
             <span>#APPLICATION_GATEWAY</span>
           </div>
@@ -854,12 +822,13 @@
             Přihláška &amp; Vyjádření zájmu
           </h2>
           <p class="text-slate-400 mt-3 text-base sm:text-lg">
-            Vyplň krátký formulář nebo naskenuj QR kód do mobilního telefonu a my ti zašleme podrobné instrukce k informační schůzce.
+            Vyplň krátký formulář nebo naskenuj QR kód do mobilního telefonu a my ti zašleme podrobné instrukce k
+            informační schůzce.
           </p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-          
+
           <!-- Left: Application Form (8 cols) -->
           <div class="lg:col-span-8 glass-panel p-6 sm:p-10 rounded-2xl relative">
             <div class="flex items-center justify-between pb-6 mb-6 border-b border-white/10">
@@ -867,7 +836,8 @@
                 <h3 class="text-xl font-bold text-white">Online formulář předběžného zájmu</h3>
                 <p class="text-xs text-slate-400 mt-0.5 font-mono">ID formuláře: #AMS-REG-2027</p>
               </div>
-              <span class="inline-flex items-center gap-1.5 text-xs font-mono text-neon-emerald bg-neon-emerald/10 border border-neon-emerald/30 px-3 py-1 rounded-full">
+              <span
+                class="inline-flex items-center gap-1.5 text-xs font-mono text-neon-emerald bg-neon-emerald/10 border border-neon-emerald/30 px-3 py-1 rounded-full">
                 <span class="w-1.5 h-1.5 rounded-full bg-neon-emerald pulse-active"></span>
                 ZÁPIS AKTIVNÍ
               </span>
@@ -875,22 +845,25 @@
 
             <!-- The Form -->
             <form id="expeditionForm" class="space-y-6">
-              
+
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <!-- Student Name -->
                 <div>
                   <label for="studentName" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
                     Jméno a příjmení žáka <span class="text-neon-pink">*</span>
                   </label>
-                  <input type="text" id="studentName" required placeholder="např. Tomáš Novák" class="w-full px-4 py-3 rounded-xl bg-cyber-900 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-neon-cyan focus:ring-1 focus:ring-neon-cyan transition-all text-sm font-sans">
+                  <input type="text" id="studentName" required placeholder="např. Tomáš Novák"
+                    class="w-full px-4 py-3 rounded-xl bg-cyber-900 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-neon-cyan focus:ring-1 focus:ring-neon-cyan transition-all text-sm font-sans">
                 </div>
 
                 <!-- Class / Grade Selection -->
                 <div>
-                  <label for="studentClass" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
+                  <label for="studentClass"
+                    class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
                     Třída (2. stupeň) <span class="text-neon-pink">*</span>
                   </label>
-                  <select id="studentClass" required class="w-full px-4 py-3 rounded-xl bg-cyber-900 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-neon-cyan focus:ring-1 focus:ring-neon-cyan transition-all text-sm font-sans">
+                  <select id="studentClass" required
+                    class="w-full px-4 py-3 rounded-xl bg-cyber-900 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-neon-cyan focus:ring-1 focus:ring-neon-cyan transition-all text-sm font-sans">
                     <option value="" disabled selected>Vyberte třídu žáka</option>
                     <option value="6.A">6.A</option>
                     <option value="6.B">6.B</option>
@@ -910,7 +883,8 @@
                   <label for="parentEmail" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
                     E-mail zákonného zástupce <span class="text-neon-pink">*</span>
                   </label>
-                  <input type="email" id="parentEmail" required placeholder="rodic@email.cz" class="w-full px-4 py-3 rounded-xl bg-cyber-900 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-neon-cyan focus:ring-1 focus:ring-neon-cyan transition-all text-sm font-sans">
+                  <input type="email" id="parentEmail" required placeholder="rodic@email.cz"
+                    class="w-full px-4 py-3 rounded-xl bg-cyber-900 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-neon-cyan focus:ring-1 focus:ring-neon-cyan transition-all text-sm font-sans">
                 </div>
 
                 <!-- Parent Phone -->
@@ -918,29 +892,36 @@
                   <label for="parentPhone" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
                     Telefon zákonného zástupce
                   </label>
-                  <input type="tel" id="parentPhone" placeholder="+420 777 000 000" class="w-full px-4 py-3 rounded-xl bg-cyber-900 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-neon-cyan focus:ring-1 focus:ring-neon-cyan transition-all text-sm font-sans">
+                  <input type="tel" id="parentPhone" placeholder="+420 777 000 000"
+                    class="w-full px-4 py-3 rounded-xl bg-cyber-900 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-neon-cyan focus:ring-1 focus:ring-neon-cyan transition-all text-sm font-sans">
                 </div>
               </div>
 
               <!-- Motivation / Question -->
               <div>
                 <label for="motivation" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
-                  Proč se chceš zúčastnit / Na co se nejvíce těšíš? <span class="text-slate-500 text-[10px] lowercase">(nepovinné)</span>
+                  Proč se chceš zúčastnit / Na co se nejvíce těšíš? <span
+                    class="text-slate-500 text-[10px] lowercase">(nepovinné)</span>
                 </label>
-                <textarea id="motivation" rows="3" placeholder="Zajímá mě digitální umění v Nxt Museum, chci si vyzkoušet angličtinu a natočit super videoreportáž..." class="w-full px-4 py-3 rounded-xl bg-cyber-900 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-neon-cyan focus:ring-1 focus:ring-neon-cyan transition-all text-sm font-sans"></textarea>
+                <textarea id="motivation" rows="3"
+                  placeholder="Zajímá mě digitální umění v Nxt Museum, chci si vyzkoušet angličtinu a natočit super videoreportáž..."
+                  class="w-full px-4 py-3 rounded-xl bg-cyber-900 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-neon-cyan focus:ring-1 focus:ring-neon-cyan transition-all text-sm font-sans"></textarea>
               </div>
 
               <!-- Consent Checkbox -->
               <div class="flex items-start gap-3">
-                <input type="checkbox" id="consent" required class="mt-1 w-4 h-4 rounded bg-cyber-900 border-white/20 text-neon-cyan focus:ring-neon-cyan focus:ring-offset-cyber-950">
+                <input type="checkbox" id="consent" required
+                  class="mt-1 w-4 h-4 rounded bg-cyber-900 border-white/20 text-neon-cyan focus:ring-neon-cyan focus:ring-offset-cyber-950">
                 <label for="consent" class="text-xs text-slate-400 leading-normal">
-                  Souhlasím se zpracováním kontaktních údajů pro účely organizace školní mobility Erasmus+ ZŠ Molekula v souladu s GDPR.
+                  Souhlasím se zpracováním kontaktních údajů pro účely organizace školní mobility Erasmus+ ZŠ Molekula v
+                  souladu s GDPR.
                 </label>
               </div>
 
               <!-- Submit Button -->
               <div>
-                <button type="submit" id="submitFormBtn" class="w-full sm:w-auto px-8 py-4 rounded-xl text-sm font-mono font-bold tracking-wide uppercase text-white bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-magenta hover:shadow-xl hover:shadow-neon-cyan/25 hover:opacity-95 transition-all duration-300 flex items-center justify-center gap-2">
+                <button type="submit" id="submitFormBtn"
+                  class="w-full sm:w-auto px-8 py-4 rounded-xl text-sm font-mono font-bold tracking-wide uppercase text-white bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-magenta hover:shadow-xl hover:shadow-neon-cyan/25 hover:opacity-95 transition-all duration-300 flex items-center justify-center gap-2">
                   <i data-lucide="send" class="w-4 h-4"></i>
                   <span>Odeslat přihlášku zájmu</span>
                 </button>
@@ -950,15 +931,19 @@
 
             <!-- Form Success Box (Hidden by default) -->
             <div id="formSuccessMessage" class="hidden text-center py-10 space-y-4">
-              <div class="w-16 h-16 rounded-full bg-neon-emerald/20 text-neon-emerald border border-neon-emerald/40 flex items-center justify-center mx-auto pulse-active">
+              <div
+                class="w-16 h-16 rounded-full bg-neon-emerald/20 text-neon-emerald border border-neon-emerald/40 flex items-center justify-center mx-auto pulse-active">
                 <i data-lucide="check" class="w-8 h-8"></i>
               </div>
               <h4 class="text-2xl font-bold text-white">Přihláška byla úspěšně zaznamenána!</h4>
               <p class="text-slate-300 text-sm max-w-md mx-auto">
-                Děkujeme za vyjádření zájmu. Na uvedený e-mail jsme odeslali potvrzení s pozvánkou na nejbližší informační setkání a tipy k minivýzvě.
+                Děkujeme za vyjádření zájmu. Na uvedený e-mail jsme odeslali potvrzení s pozvánkou na nejbližší
+                informační setkání a tipy k minivýzvě.
               </p>
               <div class="pt-4">
-                <div class="inline-block px-4 py-2 rounded-lg bg-cyber-900 border border-white/10 font-mono text-xs text-neon-cyan" id="successRefCode">
+                <div
+                  class="inline-block px-4 py-2 rounded-lg bg-cyber-900 border border-white/10 font-mono text-xs text-neon-cyan"
+                  id="successRefCode">
                   KÓD ŽÁDOSTI: #AMS-2027-OK
                 </div>
               </div>
@@ -967,10 +952,12 @@
           </div>
 
           <!-- Right: Mobile QR Code & Quick Scan (4 cols) -->
-          <div class="lg:col-span-4 glass-panel p-6 sm:p-8 rounded-2xl flex flex-col justify-between items-center text-center">
-            
+          <div
+            class="lg:col-span-4 glass-panel p-6 sm:p-8 rounded-2xl flex flex-col justify-between items-center text-center">
+
             <div class="w-full">
-              <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-slate-300 mb-6">
+              <div
+                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-slate-300 mb-6">
                 <i data-lucide="smartphone" class="w-3.5 h-3.5 text-neon-cyan"></i>
                 <span>Mobilní QR přístup</span>
               </div>
@@ -984,54 +971,55 @@
               <div class="p-4 bg-white rounded-2xl shadow-xl shadow-neon-cyan/10 inline-block mb-6 relative group">
                 <svg class="w-48 h-48 mx-auto" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <!-- QR Finder Pattern Top-Left -->
-                  <rect x="5" y="5" width="28" height="28" rx="4" fill="#070a12"/>
-                  <rect x="9" y="9" width="20" height="20" rx="2" fill="#ffffff"/>
-                  <rect x="13" y="13" width="12" height="12" rx="2" fill="#070a12"/>
+                  <rect x="5" y="5" width="28" height="28" rx="4" fill="#070a12" />
+                  <rect x="9" y="9" width="20" height="20" rx="2" fill="#ffffff" />
+                  <rect x="13" y="13" width="12" height="12" rx="2" fill="#070a12" />
 
                   <!-- QR Finder Pattern Top-Right -->
-                  <rect x="67" y="5" width="28" height="28" rx="4" fill="#070a12"/>
-                  <rect x="71" y="9" width="20" height="20" rx="2" fill="#ffffff"/>
-                  <rect x="75" y="13" width="12" height="12" rx="2" fill="#070a12"/>
+                  <rect x="67" y="5" width="28" height="28" rx="4" fill="#070a12" />
+                  <rect x="71" y="9" width="20" height="20" rx="2" fill="#ffffff" />
+                  <rect x="75" y="13" width="12" height="12" rx="2" fill="#070a12" />
 
                   <!-- QR Finder Pattern Bottom-Left -->
-                  <rect x="5" y="67" width="28" height="28" rx="4" fill="#070a12"/>
-                  <rect x="9" y="71" width="20" height="20" rx="2" fill="#ffffff"/>
-                  <rect x="13" y="75" width="12" height="12" rx="2" fill="#070a12"/>
+                  <rect x="5" y="67" width="28" height="28" rx="4" fill="#070a12" />
+                  <rect x="9" y="71" width="20" height="20" rx="2" fill="#ffffff" />
+                  <rect x="13" y="75" width="12" height="12" rx="2" fill="#070a12" />
 
                   <!-- QR Data Matrix Dots & Tech Pattern -->
-                  <rect x="38" y="8" width="6" height="6" rx="1" fill="#070a12"/>
-                  <rect x="48" y="12" width="6" height="6" rx="1" fill="#070a12"/>
-                  <rect x="38" y="24" width="6" height="6" rx="1" fill="#070a12"/>
-                  <rect x="54" y="20" width="6" height="6" rx="1" fill="#070a12"/>
-                  
-                  <rect x="8" y="38" width="6" height="6" rx="1" fill="#070a12"/>
-                  <rect x="18" y="44" width="6" height="6" rx="1" fill="#070a12"/>
-                  <rect x="26" y="38" width="6" height="6" rx="1" fill="#070a12"/>
+                  <rect x="38" y="8" width="6" height="6" rx="1" fill="#070a12" />
+                  <rect x="48" y="12" width="6" height="6" rx="1" fill="#070a12" />
+                  <rect x="38" y="24" width="6" height="6" rx="1" fill="#070a12" />
+                  <rect x="54" y="20" width="6" height="6" rx="1" fill="#070a12" />
+
+                  <rect x="8" y="38" width="6" height="6" rx="1" fill="#070a12" />
+                  <rect x="18" y="44" width="6" height="6" rx="1" fill="#070a12" />
+                  <rect x="26" y="38" width="6" height="6" rx="1" fill="#070a12" />
 
                   <!-- Center Logo / Atom -->
-                  <rect x="40" y="40" width="20" height="20" rx="4" fill="#8b5cf6"/>
-                  <circle cx="50" cy="50" r="4" fill="#ffffff"/>
-                  <circle cx="50" cy="50" r="7" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="2 2"/>
+                  <rect x="40" y="40" width="20" height="20" rx="4" fill="#8b5cf6" />
+                  <circle cx="50" cy="50" r="4" fill="#ffffff" />
+                  <circle cx="50" cy="50" r="7" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="2 2" />
 
-                  <rect x="70" y="38" width="6" height="6" rx="1" fill="#070a12"/>
-                  <rect x="82" y="46" width="6" height="6" rx="1" fill="#070a12"/>
-                  <rect x="66" y="52" width="6" height="6" rx="1" fill="#070a12"/>
-                  
-                  <rect x="38" y="68" width="6" height="6" rx="1" fill="#070a12"/>
-                  <rect x="48" y="76" width="6" height="6" rx="1" fill="#070a12"/>
-                  <rect x="56" y="66" width="6" height="6" rx="1" fill="#070a12"/>
-                  <rect x="40" y="86" width="6" height="6" rx="1" fill="#070a12"/>
+                  <rect x="70" y="38" width="6" height="6" rx="1" fill="#070a12" />
+                  <rect x="82" y="46" width="6" height="6" rx="1" fill="#070a12" />
+                  <rect x="66" y="52" width="6" height="6" rx="1" fill="#070a12" />
 
-                  <rect x="68" y="68" width="6" height="6" rx="1" fill="#070a12"/>
-                  <rect x="78" y="74" width="6" height="6" rx="1" fill="#070a12"/>
-                  <rect x="86" y="84" width="6" height="6" rx="1" fill="#070a12"/>
-                  <rect x="68" y="86" width="6" height="6" rx="1" fill="#070a12"/>
+                  <rect x="38" y="68" width="6" height="6" rx="1" fill="#070a12" />
+                  <rect x="48" y="76" width="6" height="6" rx="1" fill="#070a12" />
+                  <rect x="56" y="66" width="6" height="6" rx="1" fill="#070a12" />
+                  <rect x="40" y="86" width="6" height="6" rx="1" fill="#070a12" />
+
+                  <rect x="68" y="68" width="6" height="6" rx="1" fill="#070a12" />
+                  <rect x="78" y="74" width="6" height="6" rx="1" fill="#070a12" />
+                  <rect x="86" y="84" width="6" height="6" rx="1" fill="#070a12" />
+                  <rect x="68" y="86" width="6" height="6" rx="1" fill="#070a12" />
                 </svg>
               </div>
 
               <!-- Quick Link Copy Button -->
               <div>
-                <button id="copyLinkBtn" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 text-xs font-mono text-slate-300 hover:text-white transition-all">
+                <button id="copyLinkBtn"
+                  class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 text-xs font-mono text-slate-300 hover:text-white transition-all">
                   <i data-lucide="copy" class="w-3.5 h-3.5 text-neon-cyan"></i>
                   <span>Zkopírovat odkaz na výzvu</span>
                 </button>
@@ -1057,9 +1045,9 @@
   <!-- FOOTER SECTION -->
   <footer class="border-t border-white/10 bg-cyber-950 pt-16 pb-12 relative z-10 text-slate-400 text-xs font-sans">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
+
       <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
-        
+
         <!-- Left Brand & EU Info (6 cols) -->
         <div class="md:col-span-6 space-y-4">
           <div class="flex items-center gap-3">
@@ -1075,32 +1063,33 @@
           </div>
 
           <p class="text-slate-400 text-xs leading-relaxed max-w-lg">
-            Projekt Skupinová mobilita žáků v Amsterdamu – Jaro 2027 je realizován za finanční podpory Evropské unie v rámci programu Erasmus+.
+            Projekt Skupinová mobilita žáků v Amsterdamu – Jaro 2027 je realizován za finanční podpory Evropské unie v
+            rámci programu Erasmus+.
           </p>
 
           <!-- Official EU Flag & Co-funding Badge -->
           <div class="inline-flex items-center gap-3 p-3 rounded-xl bg-cyber-900 border border-white/10">
             <!-- EU Flag SVG -->
             <svg class="w-10 h-7 rounded border border-white/20 shrink-0" viewBox="0 0 810 540">
-              <rect width="810" height="540" fill="#003399"/>
+              <rect width="810" height="540" fill="#003399" />
               <g fill="#FFCC00" transform="translate(405,270)">
                 <g id="s">
                   <g id="c">
                     <path id="t" d="M0,-24 L3.8,-7.8 L20.4,-7.8 L7,-1.9 L12.1,14.2 L0,4.7" />
-                    <use href="#t" transform="scale(-1,1)"/>
+                    <use href="#t" transform="scale(-1,1)" />
                   </g>
                 </g>
-                <use href="#s" transform="rotate(30)"/>
-                <use href="#s" transform="rotate(60)"/>
-                <use href="#s" transform="rotate(90)"/>
-                <use href="#s" transform="rotate(120)"/>
-                <use href="#s" transform="rotate(150)"/>
-                <use href="#s" transform="rotate(180)"/>
-                <use href="#s" transform="rotate(210)"/>
-                <use href="#s" transform="rotate(240)"/>
-                <use href="#s" transform="rotate(270)"/>
-                <use href="#s" transform="rotate(300)"/>
-                <use href="#s" transform="rotate(330)"/>
+                <use href="#s" transform="rotate(30)" />
+                <use href="#s" transform="rotate(60)" />
+                <use href="#s" transform="rotate(90)" />
+                <use href="#s" transform="rotate(120)" />
+                <use href="#s" transform="rotate(150)" />
+                <use href="#s" transform="rotate(180)" />
+                <use href="#s" transform="rotate(210)" />
+                <use href="#s" transform="rotate(240)" />
+                <use href="#s" transform="rotate(270)" />
+                <use href="#s" transform="rotate(300)" />
+                <use href="#s" transform="rotate(330)" />
               </g>
             </svg>
             <div>
@@ -1119,7 +1108,9 @@
             <li><a href="#lokace" class="hover:text-neon-cyan transition-colors">Klíčové lokace</a></li>
             <li><a href="#proces" class="hover:text-neon-cyan transition-colors">Výběrové řízení</a></li>
             <li><a href="#harmonogram" class="hover:text-neon-cyan transition-colors">Časová osa</a></li>
-            <li class="pt-1"><a href="admin.html" class="text-neon-cyan hover:text-white transition-colors flex items-center gap-1.5 font-mono text-xs"><i data-lucide="lock" class="w-3.5 h-3.5 text-neon-cyan"></i><span>Administrace přihlášek</span></a></li>
+            <li class="pt-1"><a href="admin.html"
+                class="text-neon-cyan hover:text-white transition-colors flex items-center gap-1.5 font-mono text-xs"><i
+                  data-lucide="lock" class="w-3.5 h-3.5 text-neon-cyan"></i><span>Administrace přihlášek</span></a></li>
           </ul>
         </div>
 
@@ -1138,12 +1129,14 @@
 
       </div>
 
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500 font-mono">
+      <div
+        class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500 font-mono">
         <div>
           © 2026–2027 ZŠ MOLEKULA. Všechna práva vyhrazena.
         </div>
         <div class="text-center sm:text-right">
-          Financováno Evropskou unií. Názory a stanoviska vyjádřené v rámci projektu nepředstavují oficiální stanovisko EK.
+          Financováno Evropskou unií. Názory a stanoviska vyjádřené v rámci projektu nepředstavují oficiální stanovisko
+          EK.
         </div>
       </div>
 
@@ -1151,11 +1144,15 @@
   </footer>
 
   <!-- DYNAMIC LOCATION DETAILS MODAL DIALOG -->
-  <div id="locationModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop hidden opacity-0 transition-opacity duration-300">
-    <div class="relative w-full max-w-2xl glass-panel bg-cyber-950/95 border border-white/20 rounded-2xl p-6 sm:p-8 shadow-2xl transform scale-95 transition-transform duration-300" id="locationModalBox">
-      
+  <div id="locationModal"
+    class="fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop hidden opacity-0 transition-opacity duration-300">
+    <div
+      class="relative w-full max-w-2xl glass-panel bg-cyber-950/95 border border-white/20 rounded-2xl p-6 sm:p-8 shadow-2xl transform scale-95 transition-transform duration-300"
+      id="locationModalBox">
+
       <!-- Close Button -->
-      <button id="closeModalBtn" aria-label="Zavřít detail" class="absolute top-5 right-5 p-2 rounded-xl bg-white/5 border border-white/10 text-slate-400 hover:text-white hover:bg-white/10 transition-colors">
+      <button id="closeModalBtn" aria-label="Zavřít detail"
+        class="absolute top-5 right-5 p-2 rounded-xl bg-white/5 border border-white/10 text-slate-400 hover:text-white hover:bg-white/10 transition-colors">
         <i data-lucide="x" class="w-5 h-5"></i>
       </button>
 
@@ -1170,7 +1167,8 @@
   <!-- TOAST NOTIFICATION CONTAINER -->
   <div id="toastContainer" class="fixed bottom-6 right-6 z-50 flex flex-col gap-2 pointer-events-none"></div>
 
-  <!-- Main JavaScript Logic -->
-  <script src="script.js"></script>
+  <!-- Main JavaScript Logic (ES Modules) -->
+  <script type="module" src="js/main.js"></script>
 </body>
+
 </html>

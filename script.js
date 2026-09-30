@@ -442,6 +442,23 @@ function initFaqAccordion() {
 /* ==========================================================================
    6. Form Validation & Database Submission
    ========================================================================== */
+function showFormError(message) {
+  const banner = document.getElementById('formErrorBanner');
+  const text   = document.getElementById('formErrorText');
+  if (!banner || !text) {
+    showToast(message, 'error');
+    return;
+  }
+  text.textContent = message;
+  banner.classList.remove('hidden');
+  banner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function hideFormError() {
+  const banner = document.getElementById('formErrorBanner');
+  if (banner) banner.classList.add('hidden');
+}
+
 function initFormValidation() {
   const form = document.getElementById('expeditionForm');
   const successBox = document.getElementById('formSuccessMessage');
@@ -452,27 +469,46 @@ function initFormValidation() {
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
+    hideFormError();
 
-    const name = document.getElementById('studentName')?.value.trim();
+    const name         = document.getElementById('studentName')?.value.trim();
     const studentClass = document.getElementById('studentClass')?.value;
-    const email = document.getElementById('parentEmail')?.value.trim();
-    const phone = document.getElementById('parentPhone')?.value.trim();
-    const motivation = document.getElementById('motivation')?.value.trim();
-    const consent = document.getElementById('consent')?.checked;
+    const email        = document.getElementById('parentEmail')?.value.trim();
+    const phone        = document.getElementById('parentPhone')?.value.trim();
+    const motivation   = document.getElementById('motivation')?.value.trim();
+    const consent      = document.getElementById('consent')?.checked;
+    const schoolPin    = document.getElementById('schoolPin')?.value.trim();
+    const honeypot     = document.getElementById('website')?.value;
 
-    // Simple validation checks
+    // --- Honeypot check (frontendová vrstva) ---
+    if (honeypot) {
+      // Potichu simulujeme úspěch, stejně jako backend
+      form.classList.add('hidden');
+      successBox.classList.remove('hidden');
+      return;
+    }
+
+    // --- Základní validace ---
     if (!name || !studentClass || !email || !consent) {
-      showToast('Vyplňte prosím všechna povinná pole označená hvězdičkou.', 'error');
+      showFormError('Vyplňte prosím všechna povinná pole označená hvězdičkou.');
+      return;
+    }
+
+    if (!schoolPin) {
+      showFormError('Zadejte školní PIN kód. Získáš ho od učitele IT nebo v Bakalářích.');
       return;
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      showToast('Zadejte platnou e-mailovou adresu zákonného zástupce.', 'error');
+      showFormError('Zadejte platnou e-mailovou adresu zákonného zástupce.');
       return;
     }
 
-    // Submit state indicator
+    // --- Turnstile token ---
+    const turnstileToken = document.querySelector('[name="cf-turnstile-response"]')?.value || '';
+
+    // --- Submit stav tlačítka ---
     const originalBtnHtml = submitBtn ? submitBtn.innerHTML : '';
     if (submitBtn) {
       submitBtn.disabled = true;
@@ -486,19 +522,20 @@ function initFormValidation() {
     }
 
     const payload = {
-      studentName: name,
-      studentClass: studentClass,
-      parentEmail: email,
-      parentPhone: phone,
-      motivation: motivation
+      studentName:    name,
+      studentClass:   studentClass,
+      parentEmail:    email,
+      parentPhone:    phone,
+      motivation:     motivation,
+      schoolPin:      schoolPin,
+      website:        honeypot || '',
+      turnstileToken: turnstileToken
     };
 
     try {
       const response = await fetch('/api/register', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
       });
 
@@ -512,21 +549,14 @@ function initFormValidation() {
         successBox.classList.remove('hidden');
         showToast(`Přihláška pro žáka ${name} byla uložena do databáze!`, 'success');
       } else {
-        throw new Error(result.error || 'Chyba při ukládání na serveru.');
+        // Zobrazit serverovou chybu inline v banneru (ne alert)
+        showFormError(result.error || 'Chyba při ukládání přihlášky. Zkuste to prosím znovu.');
+        showToast(result.error || 'Chyba serveru.', 'error');
       }
     } catch (err) {
-      console.warn('API error, falling back to local simulation:', err);
-      // Fallback in case opened directly via file://
-      const randomCode = Math.floor(1000 + Math.random() * 9000);
-      const generatedCode = `AMS-2027-${studentClass.replace('.', '')}-${randomCode}`;
-      
-      if (refCodeElem) {
-        refCodeElem.innerText = `KÓD PŘIHLÁŠKY: #${generatedCode}`;
-      }
-
-      form.classList.add('hidden');
-      successBox.classList.remove('hidden');
-      showToast(`Přihláška pro žáka ${name} byla přijata (lokální režim).`, 'success');
+      console.error('Chyba při odesílání formuláře:', err);
+      showFormError('Nepodařilo se připojit k serveru. Zkontrolujte připojení k internetu a zkuste to znovu.');
+      showToast('Chyba připojení k serveru.', 'error');
     } finally {
       if (submitBtn) {
         submitBtn.disabled = false;
@@ -535,6 +565,7 @@ function initFormValidation() {
     }
   });
 }
+
 
 /* ==========================================================================
    7. Copy Link Feature

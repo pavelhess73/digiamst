@@ -69,5 +69,5 @@ Projekt je připraven pro nasazení do produkce na **Vercel** s cloudovou datab�
 - **Funkce**:
   - Filtrování podle stavu (Nová, Pozván k rozhovoru, Přijat do týmu, Náhradník, Zamítnuto) a třídy (7., 8., 9. ročník).
   - Fulltextové vyhledávání podle jména, e-mailu či ID.
-  - Zápis interních poznámek koordinátora / ŠPP.
+  - Zápis interních poznámek koordinátora.
   - Export kompletní databáze do Excelu jedním kliknutím (`.csv` v UTF-8 BOM).

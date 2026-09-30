@@ -359,7 +359,7 @@ function openDetailModal(id) {
       <!-- Internal notes textarea -->
       <div>
         <label for="modalNotesInput" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-1.5 font-bold">
-          Interní poznámka koordinátora &amp; ŠPP:
+          Interní poznámka koordinátora:
         </label>
         <textarea id="modalNotesInput" rows="3" placeholder="Záznam z rozhovoru, hodnocení Canvy, specifické potřeby..." class="w-full px-4 py-2.5 rounded-xl bg-cyber-900 border border-white/20 text-white font-sans text-xs focus:outline-none focus:border-neon-cyan">${app.notes || ''}</textarea>
       </div>

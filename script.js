@@ -495,7 +495,7 @@ function initFormValidation() {
     }
 
     if (!schoolPin) {
-      showFormError('Zadejte školní PIN kód. Získáš ho od učitele IT nebo v Bakalářích.');
+      showFormError('Zadejte školní PIN kód. Získáš ho od učitele IT nebo v EduPage.');
       return;
     }
 

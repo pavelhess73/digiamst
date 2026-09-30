@@ -93,7 +93,7 @@ export default async function handler(req, res) {
     if (!submittedPin || submittedPin !== expectedPin) {
       return res.status(400).json({
         success: false,
-        error: 'Neplatný školní PIN kód. Získej správný kód od učitele IT nebo v Bakalářích.'
+        error: 'Neplatný školní PIN kód. Získej správný kód od učitele IT nebo v EduPage.'
       });
     }
 

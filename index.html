@@ -854,14 +854,21 @@
               <!-- ============================================================
                    HONEYPOT – Skrytá past na boty (vizuálně neviditelné)
                    ============================================================ -->
-              <div aria-hidden="true" style="display:none !important; position:absolute; left:-9999px; opacity:0; pointer-events:none;">
+              <div aria-hidden="true"
+                style="display:none !important; position:absolute; left:-9999px; opacity:0; pointer-events:none;">
                 <label for="website">Website (nevyplňujte)</label>
                 <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
               </div>
 
               <!-- Inline chybový banner (skrytý do prvního erroru) -->
-              <div id="formErrorBanner" class="hidden flex items-start gap-3 px-4 py-3.5 rounded-xl bg-red-500/10 border border-red-500/40 text-red-300 text-xs font-sans" role="alert">
-                <svg class="w-4 h-4 mt-0.5 shrink-0 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
+              <div id="formErrorBanner"
+                class="hidden flex items-start gap-3 px-4 py-3.5 rounded-xl bg-red-500/10 border border-red-500/40 text-red-300 text-xs font-sans"
+                role="alert">
+                <svg class="w-4 h-4 mt-0.5 shrink-0 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 9v3m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                </svg>
                 <span id="formErrorText">Chyba</span>
               </div>
 
@@ -920,10 +927,13 @@
                   Školní PIN kód <span class="text-neon-pink">*</span>
                 </label>
                 <div class="relative">
-                  <i data-lucide="shield-check" class="w-4 h-4 text-slate-500 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
-                  <input type="text" id="schoolPin" required placeholder="Získej od třídní učitelky nebo v Bakalářích" class="w-full pl-10 pr-4 py-3 rounded-xl bg-cyber-900 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-neon-purple focus:ring-1 focus:ring-neon-purple transition-all text-sm font-mono tracking-widest uppercase" maxlength="32" autocomplete="off" spellcheck="false">
+                  <i data-lucide="shield-check"
+                    class="w-4 h-4 text-slate-500 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+                  <input type="text" id="schoolPin" required placeholder="Získej od třídní učitelky nebo v Bakalářích"
+                    class="w-full pl-10 pr-4 py-3 rounded-xl bg-cyber-900 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-neon-purple focus:ring-1 focus:ring-neon-purple transition-all text-sm font-mono tracking-widest uppercase"
+                    maxlength="32" autocomplete="off" spellcheck="false">
                 </div>
-                <p class="text-[11px] text-slate-500 mt-1.5 font-mono">Kód získáš od učitele IT nebo v sekci Školní akce v Bakalářích.</p>
+                <p class="text-[11px] text-slate-500 mt-1.5 font-mono">Kód v úvodní informaci.</p>
               </div>
 
               <!-- Motivation / Question -->
@@ -952,7 +962,8 @@
                    Testovací sitekey: 1x00000000000000000000AA (vždy projde)
                    Na Vercelu nahraďte reálným site key z dash.cloudflare.com
                    ============================================================ -->
-              <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-theme="dark" data-language="cs"></div>
+              <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-theme="dark" data-language="cs">
+              </div>
 
               <!-- Submit Button -->
               <div>
@@ -1055,7 +1066,7 @@
             </div>
             <div>
               <span class="font-extrabold text-white text-base">ZŠ MOLEKULA</span>
-              <span class="text-slate-500 font-mono text-xs block">Základní škola a inovativní centrum</span>
+              <span class="text-slate-500 font-mono text-xs block">Základní škola</span>
             </div>
           </div>
 
@@ -1117,7 +1128,7 @@
           <div class="space-y-1.5 text-xs text-slate-300">
             <p>Koordinační tým Erasmus+</p>
             <p class="text-slate-400">Tým technické laboratoře &amp; Vedení školy</p>
-            <p class="font-mono text-neon-cyan">erasmus@zsmolekula.cz</p>
+            <p class="font-mono text-neon-cyan">admin@zsmolekula.cz</p>
           </div>
           <div class="pt-2 font-mono text-[11px] text-slate-500">
             [SYS_VERSION: 2.7.0_PROD]

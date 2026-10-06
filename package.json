@@ -5,6 +5,8 @@
   "description": "Erasmus+ Amsterdam 2027 - Web a administrace pro ZŠ MOLEKULA",
   "type": "module",
   "scripts": {
+    "dev": "npx serve . --listen 3000 --no-clipboard",
+    "start": "npx serve . --listen 3000 --no-clipboard",
     "build": "echo 'No build step required for static assets'"
   },
   "dependencies": {
